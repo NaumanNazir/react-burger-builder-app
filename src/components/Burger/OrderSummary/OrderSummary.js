@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Aux from '../../../hoc/Auxx'
+import Button from '../../UI/Button/Button'
 
 function OrderSummary(props) {
   const ingredientsSummary = Object.keys(props.ingredients)
@@ -19,7 +20,10 @@ function OrderSummary(props) {
       <ul>
         {ingredientsSummary}
       </ul>
+      <p><strong> Total: {props.price.toFixed(2)} </strong></p>
       <p> Continue to Checkout? </p>
+      <Button btnType="Danger" clicked={props.purchaseCancelled}> CANCEL </Button>
+      <Button btnType="Success" clicked={props.purchaseContinued}> CONTINUE </Button>
     </Aux>
   )
 }
