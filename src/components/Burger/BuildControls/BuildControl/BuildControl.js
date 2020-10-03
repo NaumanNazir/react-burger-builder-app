@@ -13,7 +13,12 @@ function BuildControl(props) {
       >
         Less
       </button>
-      <button className={classes.More} onClick={props.added}> More </button>
+      <button
+        className={classes.More}
+        onClick={props.added}
+      >
+        More
+      </button>
     </div>
   )
 }
