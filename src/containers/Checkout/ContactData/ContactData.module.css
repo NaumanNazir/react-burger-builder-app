@@ -2,6 +2,23 @@
   margin: 20px auto;
   width: 80%;
   text-align: center;
+  box-shadow: 0 2px 3px #ccc;
+  border: 1px solid #eee;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.ContactData form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Input {
+  display: block;
+  font-size: 14px;
+  padding: 5px;
+  width: 250px;
 }
 
 @media (min-width: 600px) {
